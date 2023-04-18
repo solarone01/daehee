@@ -1,5 +1,27 @@
-<form>
-  <label for="suppliers">계약 공급사 수:</label>
-  <input type="number" id="suppliers" name="suppliers" required>
-  <button type="submit">제출</button>
-</form>
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>슬롯 계산기</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="container">
+      <h1>슬롯 계산기</h1>
+      <form id="slot-form">
+        <div class="form-group">
+          <label for="suppliers">계약 공급사 수:</label>
+          <input type="number" id="suppliers" name="suppliers" required>
+        </div>
+        <div class="form-group">
+          <label for="slots">연간 슬롯:</label>
+          <input type="number" id="slots" name="slots" required>
+        </div>
+        <button type="submit">계산하기</button>
+      </form>
+      <div id="result"></div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
